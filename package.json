@@ -1,0 +1,42 @@
+{
+  "name": "mobile-pentest-mcp",
+  "version": "2.0.0",
+  "description": "Unified MCP server for mobile app penetration testing — Frida, Objection, MobSF, JADX, ADB, APKTool with aggressive token optimization",
+  "main": "dist/index.js",
+  "bin": {
+    "mobile-pentest-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "register": "node scripts/register.js",
+    "test": "node scripts/test-all-tools.js",
+    "test:integration": "node scripts/test-mcp-integration.js",
+    "postinstall": "node scripts/check-deps.js || true"
+  },
+  "keywords": ["mcp", "pentest", "frida", "objection", "mobsf", "jadx", "adb", "apktool", "mobile", "security"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "better-sqlite3": "^11.8.1",
+    "chalk": "^4.1.2",
+    "command-exists": "^1.2.9",
+    "diff": "^7.0.0",
+    "execa": "^5.1.1",
+    "fast-folder-size": "^2.1.0",
+    "hasha": "^5.2.2",
+    "lru-cache": "^10.4.3",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "glob": "^10.3.10",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/diff": "^7.0.0",
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
