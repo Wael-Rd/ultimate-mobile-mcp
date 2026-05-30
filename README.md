@@ -224,3 +224,9 @@ This tool is intended **strictly** for authorized security research, application
 
 ## 📄 License
 Licensed under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ by <a href="https://github.com/Wael-Rd">Wael-Rd</a></sub>
+</p>
