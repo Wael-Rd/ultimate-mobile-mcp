@@ -33,12 +33,12 @@ flowchart TD
     subgraph B["🔥 Ultimate Mobile Pentest MCP"]
         P["⚙️ 6-Layer Token Optimization Pipeline\nLRU Cache → Tiering → Diffing → Summary → Gzip → Artifact Offload"]
         P --> E1 & E2 & E3 & E4 & E5 & E6
-        E1["📲 ADB\n21 tools"]
-        E2["🧪 Frida\n14 tools"]
-        E3["🔍 Objection\n13 tools"]
-        E4["☁️ MobSF\n10 tools"]
-        E5["☕ JADX\n9 tools"]
-        E6["🔧 APKTool\n10 tools"]
+        E1[" ADB\n21 tools"]
+        E2[" Frida\n14 tools"]
+        E3[" Objection\n13 tools"]
+        E4[" MobSF\n10 tools"]
+        E5[" JADX\n9 tools"]
+        E6[" APKTool\n10 tools"]
     end
 
     E1 --> D1["Device"]
@@ -59,12 +59,12 @@ flowchart TD
 
 | # | Layer | What It Does | Tokens Saved |
 |:-:|:------|:-------------|:------------:|
-| **1** | 🗄️ **LRU Cache** | Identical calls return instantly — zero execution, zero tokens | **100%** on repeats |
-| **2** | 📊 **Tiered Delivery** | `minimal` · `summary` · `full` — AI picks what it needs | **60 – 80%** |
-| **3** | 🔄 **Smart Diffing** | Sends only *what changed* between repeated polling calls | **85 – 95%** |
-| **4** | 🔬 **Summary Extraction** | RegExp matchers strip boilerplate, surface only critical findings | **50 – 70%** |
-| **5** | 🗜️ **Gzip Compression** | Artifacts stored compressed, preserving local disk | **70%** size cut |
-| **6** | 📦 **Artifact Offloading** | Dumps >500 lines saved as `.md` — AI gets path + summary only | **95%+** |
+| **1** |  **LRU Cache** | Identical calls return instantly — zero execution, zero tokens | **100%** on repeats |
+| **2** |  **Tiered Delivery** | `minimal` · `summary` · `full` — AI picks what it needs | **60 – 80%** |
+| **3** |  **Smart Diffing** | Sends only *what changed* between repeated polling calls | **85 – 95%** |
+| **4** |  **Summary Extraction** | RegExp matchers strip boilerplate, surface only critical findings | **50 – 70%** |
+| **5** |  **Gzip Compression** | Artifacts stored compressed, preserving local disk | **70%** size cut |
+| **6** |  **Artifact Offloading** | Dumps >500 lines saved as `.md` — AI gets path + summary only | **95%+** |
 
 ```
 Before:  ████████████████████████████████████  100,000 tokens
@@ -76,7 +76,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 ## 🛠️ Arsenal — 83 Tools, 6 Engines
 
 <details>
-<summary><b>📲 ADB Engine — 21 Tools</b></summary>
+<summary><b> ADB Engine — 21 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -91,7 +91,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>🧪 Frida Instrumentation — 14 Tools</b></summary>
+<summary><b> Frida Instrumentation — 14 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -103,7 +103,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>🔍 Objection Runtime — 13 Tools</b></summary>
+<summary><b> Objection Runtime — 13 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -116,7 +116,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>☁️ MobSF Cloud Client — 10 Tools</b></summary>
+<summary><b> MobSF Cloud Client — 10 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -128,7 +128,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>☕ JADX Decompiler — 9 Tools</b></summary>
+<summary><b> JADX Decompiler — 9 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -140,7 +140,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>🔧 APKTool Engine — 10 Tools</b></summary>
+<summary><b> APKTool Engine — 10 Tools</b></summary>
 <br/>
 
 | Category | Tools |
@@ -152,7 +152,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 </details>
 
 <details>
-<summary><b>📈 Meta & Workflow — 6 Tools</b></summary>
+<summary><b> Meta & Workflow — 6 Tools</b></summary>
 <br/>
 
 | Tool | Description |
@@ -166,7 +166,7 @@ After:   ████                                   11,600 tokens  (88.4% sa
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Step 1 — Prerequisites
 
@@ -184,7 +184,7 @@ docker run -it --rm -p 8000:8000 opensecurity/mobsf:latest
 </details>
 
 <details>
-<summary><b>🍎 macOS</b></summary>
+<summary><b> macOS</b></summary>
 
 ```bash
 brew install adb apktool jadx
@@ -238,15 +238,15 @@ npm run register
 
 | OS | Path |
 |:---|:-----|
-| 🍎 macOS | `~/Library/Application Support/Claude/claude_desktop_config.json` |
-| 🪟 Windows | `%APPDATA%\Claude\claude_desktop_config.json` |
+|  macOS | `~/Library/Application Support/Claude/claude_desktop_config.json` |
+|  Windows | `%APPDATA%\Claude\claude_desktop_config.json` |
 | 🐧 Linux | `~/.config/Claude/claude_desktop_config.json` |
 
 ---
 
 ## 💡 Real-World Prompts
 
-### 🔬 Full Automated Scan
+###  Full Automated Scan
 ```
 "Run a full pentest_workflow on test.apk and report all high-severity findings."
 ```
