@@ -312,7 +312,7 @@ npm run register
 
 <br/>
 
-*Built with obsession by [Wael-Rd](https://github.com/Wael-Rd)*
+*Built with ❤️ by [Wael-Rd](https://github.com/Wael-Rd)*
 
 [![GitHub](https://img.shields.io/badge/github.com/Wael--Rd-0a0a0a?style=for-the-badge&logo=github&logoColor=00ff88)](https://github.com/Wael-Rd)
 
