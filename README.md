@@ -31,7 +31,7 @@
 │                Ultimate Mobile Pentest MCP                 │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │             Token Optimization Pipeline              │  │
-│  │  Cache ➔ Tiering ➔ Diffing ➔ Summary ➔ Offloading   │  │
+│  │  Cache → Tiering → Diffing → Summary → Offloading   │  │
 │  └──────────────────────────────────────────────────────┘  │
 │  ┌────────┬────────┬──────────┬────────┬────────┬───────┐  │
 │  │  ADB   │ Frida  │Objection │ MobSF  │  JADX  │APKTool│  │
