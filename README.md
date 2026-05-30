@@ -1,15 +1,26 @@
-# 🔥 Mobile Pentest MCP — v2.0.0
+<p align="center">
+  <img src="https://img.shields.io/badge/MCP-1.12.1-blue.svg?style=for-the-badge&logo=model-context-protocol" alt="MCP Protocol" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20WSL-success.svg?style=for-the-badge&logo=android" alt="Platform Compatibility" />
+  <img src="https://img.shields.io/badge/Build-Passing-green.svg?style=for-the-badge" alt="Build Status" />
+</p>
 
-[![MCP Protocol](https://img.shields.io/badge/MCP-1.12.1-blue.svg?style=for-the-badge&logo=model-context-protocol)](https://modelcontextprotocol.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Platform Compatibility](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20WSL-success.svg?style=for-the-badge&logo=android)](https://github.com)
-[![Build Status](https://img.shields.io/badge/Build-Passing-green.svg?style=for-the-badge)](https://github.com)
+<h1 align="center">🔥 Ultimate Mobile Pentest MCP — v2.0.0</h1>
 
-The **first unified Model Context Protocol (MCP) server** that bridges the entire mobile application security arsenal — **Frida, Objection, MobSF, JADX, ADB, and APKTool** — into a single, cohesive, AI-orchestrated endpoint. 
+<p align="center">
+  <b>The first unified Model Context Protocol (MCP) server that bridges the entire mobile application security arsenal into a single, cohesive, AI-orchestrated endpoint.</b>
+</p>
 
-Enable Claude, Gemini, Cursor, Windsurf, or any compatible AI client to decompile, patch, repack, inspect, bypass protections, and dynamically instrument Android & iOS apps natively.
+<p align="center">
+  <i>Enable Claude, Gemini, Cursor, Windsurf, or any compatible AI client to decompile, patch, repack, inspect, bypass protections, and dynamically instrument Android & iOS apps natively.</i>
+</p>
 
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Wael-Rd/ultimate-mobile-mcp/main/docs/assets/divider.png" alt="" style="max-width: 100%;" />
+</p>
+
+<div align="center">
+  <pre>
 ┌────────────────────────────────────────────────────────┐
 │               AI Client (Cursor, Claude, etc.)          │
 │               via MCP JSON-RPC over stdio              │
@@ -29,7 +40,8 @@ Enable Claude, Gemini, Cursor, Windsurf, or any compatible AI client to decompil
 └───────┼─────────┼──────────┼─────────┼───────┼──────┼───┘
         ▼         ▼          ▼         ▼       ▼      ▼
     [Device]   [Memory]  [Runtime]   [Web]  [Java] [Smali]
-```
+  </pre>
+</div>
 
 ---
 
@@ -130,8 +142,8 @@ docker run -it --rm -p 8000:8000 opensecurity/mobsf:latest
 
 ### 2. Get the Server Code
 ```bash
-git clone https://github.com/your-username/mobile-pentest-mcp.git
-cd mobile-pentest-mcp
+git clone https://github.com/Wael-Rd/ultimate-mobile-mcp.git
+cd ultimate-mobile-mcp
 npm install
 npm run build
 ```
@@ -155,7 +167,7 @@ Add the server manual entries to your client settings if you are using other hos
   "mcpServers": {
     "mobile-pentest": {
       "command": "node",
-      "args": ["/absolute/path/to/mobile-pentest-mcp/dist/index.js"],
+      "args": ["/absolute/path/to/ultimate-mobile-mcp/dist/index.js"],
       "env": {
         "MOBSF_URL": "http://127.0.0.1:8000",
         "MOBSF_API_KEY": "YOUR_MOBSF_API_KEY_HERE"
